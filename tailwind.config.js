@@ -4,7 +4,8 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				"time-bus": "url('/TimeBus.jpg')",
+				"portfolio-v1": "url('/portfoliov1.png')",
+				"lorem-bg": "url('/lorem.png')",
 			},
 		},
 	},

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vite App</title>
+		<title>Portfolio</title>
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
@@ -19,26 +19,44 @@
 				<p class="text-xs">Poland, Katowice</p>
 			</div>
 			<nav
-				class="w-3/4 md:w-2/3 lg:w-1/2 h-16 fixed top-0 flex items-center justify-around bg-neutral-300 text-xl rounded-2xl mt-0 lg:mt-8 z-10"
+				class="w-3/4 md:w-2/3 lg:w-1/2 h-16 fixed top-0 flex items-center justify-around bg-neutral-300 text-xl rounded-2xl mt-0 lg:mt-8 z-10 border-b-[1px] border-neutral-900"
 			>
 				<a
 					class="flex flex-col items-center justify-center text-base md:text-xl group"
 					href="/#"
 					><i class="text-2xl md:text-3xl fa-solid fa-house"></i>
 					<span
-						class="tooltip hidden absolute -bottom-6 bg-neutral-800 border-neutral-500 border-[1px] text-white text-xs py-2 px-4 rounded-md group-hover:block"
+						class="tooltip hidden absolute -bottom-6 bg-neutral-800 border-neutral-500 border-[1px] text-white text-xs py-2 px-4 rounded-md lg:group-hover:block"
 						>Home</span
 					>
 				</a>
-				<a class="text-base md:text-xl" href="./#projects"
-					><i class="text-2xl md:text-3xl fa-solid fa-diagram-project"></i
-				></a>
-				<a class="text-base md:text-xl" href="./about.html"
-					><i class="text-2xl md:text-3xl fa-solid fa-address-card"></i
-				></a>
-				<a class="text-base md:text-xl" href="#contact"
-					><i class="text-2xl md:text-3xl fa-solid fa-envelope"></i
-				></a>
+				<a
+					class="flex flex-col items-center justify-center text-base md:text-xl group"
+					href="./#projects"
+					><i class="text-2xl md:text-3xl fa-solid fa-diagram-project"></i>
+					<span
+						class="tooltip hidden absolute -bottom-6 bg-neutral-800 border-neutral-500 border-[1px] text-white text-xs py-2 px-4 rounded-md lg:group-hover:block"
+						>Projects</span
+					>
+				</a>
+				<a
+					class="flex flex-col items-center justify-center text-base md:text-xl group"
+					href="./about.html"
+					><i class="text-2xl md:text-3xl fa-solid fa-address-card"></i>
+					<span
+						class="tooltip hidden absolute -bottom-6 bg-neutral-800 border-neutral-500 border-[1px] text-white text-xs py-2 px-4 rounded-md lg:group-hover:block"
+						>About</span
+					>
+				</a>
+				<a
+					class="flex flex-col items-center justify-center text-base md:text-xl group"
+					href="#contact"
+					><i class="text-2xl md:text-3xl fa-solid fa-envelope"></i>
+					<span
+						class="tooltip hidden absolute -bottom-6 bg-neutral-800 border-neutral-500 border-[1px] text-white text-xs py-2 px-4 rounded-md lg:group-hover:block"
+						>Contact</span
+					>
+				</a>
 			</nav>
 			<div
 				class="wireframe relative h-screen md:h-[140vh] w-full border-2 rounded-3xl border-neutral-400"
@@ -83,17 +101,23 @@
 			>
 				<div class="left flex flex-col gap-16">
 					<div
-						class="relative w-full lg:w-[40vw] h-[60vh] bg-neutral-300 bg-center blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
+						class="relative w-full lg:w-[40vw] h-[60vh] bg-portfolio-v1 bg-cover blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
 					>
 						<p
 							class="absolute bottom-10 left-10 text-6xl font-bold tracking-wide"
 						>
-							TimeBus
+							Portfolio v1
 						</p>
 					</div>
 					<div
-						class="w-full lg:w-[40vw] h-screen bg-neutral-300 bg-center blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
-					></div>
+						class="w-full lg:w-[40vw] h-screen bg-lorem-bg bg-center bg-cover blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
+					>
+						<p
+							class="absolute bottom-10 left-10 text-6xl font-bold tracking-wide text-slate-50"
+						>
+							Lorem shop
+						</p>
+					</div>
 				</div>
 				<div class="right flex flex-col gap-16">
 					<div
