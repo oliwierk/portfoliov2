@@ -1,5 +1,3 @@
-import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -35,6 +33,13 @@ gsap.from(".top-text", {
 	opacity: 0,
 	ease: "power3.out",
 	delay: 0.5,
+});
+gsap.from("#canvas-main", {
+	duration: 1,
+	y: 100,
+	opacity: 0,
+	ease: "power2.out",
+	delay: 1.5,
 });
 gsap.from(".signature", {
 	scrollTrigger: {
