@@ -4,8 +4,9 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				"portfolio-v1": "url('/portfoliov1.png')",
+				"portfolio-v1": "url('/portfoliov1-main.png')",
 				"lorem-bg": "url('/lorem.png')",
+				"lotto-bg": "url('/lotto.png')",
 			},
 		},
 	},
