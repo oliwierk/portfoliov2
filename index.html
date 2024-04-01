@@ -114,7 +114,7 @@
 						</p>
 					</div>
 					<div
-						class="w-full lg:w-[40vw] h-screen bg-lorem-bg bg-center bg-cover blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
+						class="relative w-full lg:w-[40vw] h-screen bg-lorem-bg bg-center bg-cover blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
 					>
 						<p
 							class="absolute bottom-10 left-10 text-7xl font-bold tracking-wide text-slate-50"
@@ -125,8 +125,14 @@
 				</div>
 				<div class="right flex flex-col gap-16">
 					<div
-						class="w-full lg:w-[45vw] h-screen bg-lotto-bg bg-cover bg-center blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
-					></div>
+						class="relative w-full lg:w-[45vw] h-screen bg-lotto-bg bg-cover bg-center blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
+					>
+						<p
+							class="absolute bottom-10 left-10 text-7xl font-bold tracking-wide text-slate-50"
+						>
+							Gambling Site
+						</p>
+					</div>
 					<div
 						class="w-full lg:w-[45vw] h-1/2 bg-neutral-300 bg-center blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
 					></div>
@@ -149,39 +155,89 @@
 			</div>
 			<div
 				id="about"
-				class="flex flex-col gap-32 h-screen w-full text-slate-50"
+				class="relative flex flex-col h-[200vh] w-full text-slate-50"
 			>
-				<p class="text-5xl text-neutral-500">
+				<p class="absolute top-10 left-0 text-5xl text-neutral-500">
 					I'm 18 years old guy, passionated about art in all meanings. I started
 					creating <span class="text-slate-50"> websites </span> in 2022. I
 					started taking courses and watched some tutorials. After some time I
 					acquired my <span class="text-slate-50">style</span>.
 				</p>
-				<p class="text-5xl text-neutral-500 text-right">
+				<p class="absolute top-1/3 left-0 text-5xl text-neutral-500">
 					I'm 18 years old guy, passionated about art in all meanings. I started
 					creating <span class="text-slate-50"> websites </span> in 2022. I
 					started taking courses and watched some tutorials. After some time I
 					acquired my <span class="text-slate-50">style</span>.
 				</p>
-				<p class="text-5xl text-neutral-500">
+				<p class="absolute bottom-1/4 left-0 text-5xl text-neutral-500">
 					I'm 18 years old guy, passionated about art in all meanings. I started
 					creating <span class="text-slate-50"> websites </span> in 2022. I
 					started taking courses and watched some tutorials. After some time I
 					acquired my <span class="text-slate-50">style</span>.
 				</p>
 			</div>
-			<footer
+			<div
 				id="contact"
 				class="flex h-screen w-full border-[1px] border-neutral-400 rounded-2xl"
 			>
-				<div class="contact-left w-1/2 h-full text-slate-50">
-					<a href=""><div class="text-5xl">IG</div></a>
-
-					<div>X</div>
-					<div>LinkedIn</div>
-					<div>Github</div>
+				<div
+					class="contact-left w-1/2 h-full text-slate-50 border-r-[2px] border-neutral-300"
+				>
+					<a href=""
+						><div
+							class="h-1/6 flex justify-between items-center border-b-[1px] border-neutral-400 text-5xl p-8 hover:brightness-50 transition-all duration-300"
+						>
+							<i class="fa-solid fa-angles-right text-neutral-300"></i>
+							<p>Instagram</p>
+							<i class="fa-brands fa-instagram text-7xl"></i>
+							<i class="fa-solid fa-angles-left text-neutral-300"></i></div
+					></a>
+					<a href=""
+						><div
+							class="h-1/6 flex justify-between items-center border-b-[1px] border-neutral-400 text-5xl p-8 hover:brightness-50 transition-all duration-300"
+						>
+							<i class="fa-solid fa-angles-right text-neutral-300"></i>
+							<p>X</p>
+							<img class="w-[4.5rem]" src="/twitterx.svg" alt="X icon" />
+							<i class="fa-solid fa-angles-left text-neutral-300"></i></div
+					></a>
+					<a href=""
+						><div
+							class="h-1/6 flex justify-between items-center border-b-[1px] border-neutral-400 text-5xl p-8 hover:brightness-50 transition-all duration-300"
+						>
+							<i class="fa-solid fa-angles-right text-neutral-300"></i>
+							<p>LinkedIn</p>
+							<i class="fa-brands fa-linkedin text-7xl"></i>
+							<i class="fa-solid fa-angles-left text-neutral-300"></i></div
+					></a>
+					<a href=""
+						><div
+							class="h-1/6 flex justify-between items-center border-b-[1px] border-neutral-400 text-5xl p-8 hover:brightness-50 transition-all duration-300"
+						>
+							<i class="fa-solid fa-angles-right text-neutral-300"></i>
+							<p>GitHub</p>
+							<i class="fa-brands fa-square-github text-7xl"></i>
+							<i class="fa-solid fa-angles-left text-neutral-300"></i></div
+					></a>
+					<div class="h-2/6 flex flex-col gap-12 p-8">
+						<p class="text-2xl text-neutral-400">
+							Or contact me through email:
+						</p>
+						<div class="flex items-center justify-between">
+							<i class="fa-solid fa-angles-right text-neutral-300 text-5xl"></i>
+							<p class="text-4xl">oliwier.kotlicki@gmail.com</p>
+							<i class="fa-solid fa-angles-left text-neutral-300 text-5xl"></i>
+						</div>
+					</div>
 				</div>
 				<div class="contact-right text-slate-50">Contact form</div>
+			</div>
+			<footer
+				class="flex items-center h-[12vh] w-full border-[1px] border-neutral-400 rounded-2xl mt-12 p-8"
+			>
+				<p class="text-xl text-neutral-400">
+					&copy;2024 Oliwier Kotlicki. All rights reserved
+				</p>
 			</footer>
 		</div>
 		<script
@@ -190,5 +246,6 @@
 		></script>
 		<script type="module" src="/main.js"></script>
 		<script defer type="module" src="/threejs.js"></script>
+		<script defer type="module" src="/about-bg.js"></script>
 	</body>
 </html>
