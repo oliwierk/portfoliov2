@@ -19,7 +19,7 @@
 				<p class="text-xs">Poland, Katowice</p>
 			</div>
 			<nav
-				class="w-3/4 md:w-2/3 lg:w-1/2 h-16 fixed top-0 flex items-center justify-around bg-neutral-300 text-xl rounded-2xl mt-0 lg:mt-8 z-10 border-b-[1px] border-neutral-900"
+				class="w-2/3 md:w-2/3 lg:w-1/2 h-16 fixed top-0 flex items-center justify-around bg-neutral-300 text-xl rounded-2xl mt-0 lg:mt-8 z-10 border-b-[1px] border-neutral-900"
 			>
 				<a
 					class="flex flex-col items-center justify-center text-base md:text-xl group"
@@ -85,62 +85,46 @@
 					</p>
 				</div>
 			</div>
-			<main class="w-full h-full flex flex-col gap-8 mt-16 lg:hidden">
-				<div
-					class="relative w-full h-[30vh] bg-neutral-300 rounded-2xl cursor-pointer"
-				></div>
-				<div
-					class="relative w-full h-[30vh] bg-neutral-300 rounded-2xl cursor-pointer"
-				></div>
-				<div
-					class="relative w-full h-[30vh] bg-neutral-300 rounded-2xl cursor-pointer"
-				></div>
-				<div
-					class="relative w-full h-[30vh] bg-neutral-300 rounded-2xl cursor-pointer"
-				></div>
-			</main>
-
 			<p class="text-2xl text-slate-50 text-center mt-32">My projects</p>
-
 			<main
 				id="projects"
-				class="hidden lg:flex justify-between w-full h-full mt-16 border-[1px] border-neutral-400 rounded-2xl p-8"
+				class="flex flex-col lg:flex-row justify-between w-full h-full mt-16 rounded-2xl"
 			>
 				<div class="left flex flex-col gap-16">
 					<div
-						class="relative w-full lg:w-[40vw] h-[60vh] bg-portfolio-v1 bg-cover blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
+						class="relative w-full lg:w-[40vw] h-[60vh] bg-portfolio-v1 bg-cover lg:blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
 					>
 						<p
-							class="absolute bottom-10 left-10 text-7xl font-bold tracking-wide text-slate-50"
+							class="absolute bottom-10 left-10 text-4xl lg:text-7xl font-bold tracking-wide text-slate-50"
 						>
 							Portfolio v1
 						</p>
 					</div>
 					<div
-						class="relative w-full lg:w-[40vw] h-screen bg-lorem-bg bg-center bg-cover blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
+						class="relative w-full lg:w-[40vw] h-[60vh] lg:h-screen bg-lorem-bg bg-center bg-cover lg:blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
 					>
 						<p
-							class="absolute bottom-10 left-10 text-7xl font-bold tracking-wide text-slate-50"
+							class="absolute bottom-10 left-10 text-4xl lg:text-7xl font-bold tracking-wide text-slate-50"
 						>
 							Online Shop
 						</p>
 					</div>
 				</div>
-				<div class="right flex flex-col gap-16">
+				<div class="right flex flex-col gap-16 mt-16">
 					<div
-						class="relative w-full lg:w-[45vw] h-screen bg-lotto-bg bg-cover bg-center blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
+						class="relative w-full lg:w-[45vw] h-[60vh] lg:h-screen bg-lotto-bg bg-cover bg-center lg:blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
 					>
 						<p
-							class="absolute bottom-10 left-10 text-7xl font-bold tracking-wide text-slate-50"
+							class="absolute bottom-10 left-10 text-4xl lg:text-7xl font-bold tracking-wide text-slate-50"
 						>
 							Gambling Site
 						</p>
 					</div>
 					<div
-						class="w-full lg:w-[45vw] h-1/2 bg-neutral-900 bg-center blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
+						class="relative w-full lg:w-[45vw] h-[60vh] bg-neutral-900 bg-center lg:blur-sm hover:blur-0 transition-all duration-300 rounded-2xl cursor-pointer"
 					>
 						<p
-							class="absolute bottom-10 left-10 text-7xl font-bold tracking-wide text-slate-50"
+							class="absolute bottom-10 left-10 text-4xl lg:text-7xl font-bold tracking-wide text-slate-50"
 						>
 							Placeholder
 						</p>
@@ -150,37 +134,45 @@
 			<div class="flex flex-col h-[70vh] w-full gap-6 mt-32">
 				<p class="text-2xl text-slate-50 text-center mb-16">What I do?</p>
 				<div
-					class="flex justify-between items-center w-full h-1/4 rounded-2xl p-16 text-slate-50 border-[1px] border-neutral-600"
+					class="flex justify-between items-center w-full h-1/4 rounded-2xl p-4 lg:p-16 text-slate-50 border-[1px] border-neutral-600"
 				>
-					<p class="text-8xl text-neutral-400">Web Apps</p>
-					<p class="text-8xl">Web Design</p>
+					<p class="text-3xl lg:text-8xl text-neutral-400">Web Apps</p>
+					<p class="text-3xl lg:text-8xl">Web Design</p>
 				</div>
 				<div
-					class="flex justify-between items-center w-full h-1/4 rounded-2xl p-16 text-slate-50 border-[1px] border-neutral-600"
+					class="flex justify-between items-center w-full h-1/4 rounded-2xl p-4 lg:p-16 text-slate-50 border-[1px] border-neutral-600"
 				>
-					<p class="text-8xl">Mobile Apps</p>
-					<p class="text-8xl text-neutral-400">3D Web Pages</p>
+					<p class="text-3xl lg:text-8xl">Mobile Apps</p>
+					<p class="text-3xl lg:text-8xl text-neutral-400 text-center">
+						3D Web Pages
+					</p>
 				</div>
 			</div>
 			<div
 				id="about"
-				class="relative flex flex-col h-[180vh] w-full text-slate-50"
+				class="relative flex flex-col h-[140vh] lg:h-[180vh] w-full text-slate-50"
 			>
-				<p class="absolute top-[10%] left-0 text-5xl text-neutral-500">
+				<p
+					class="absolute top-[10%] left-0 text-xl lg:text-5xl text-neutral-500"
+				>
 					As a youthful <span class="text-slate-50">visionary</span> of 18, I am
 					perpetually enchanted by the intricate dance of website design. With
 					each new endeavor, I elevate my
 					<span class="text-slate-50">craft</span>, infusing my unique style
 					honed through a vibrant palette of experiences.
 				</p>
-				<p class="absolute top-[40%] left-0 text-5xl text-neutral-500">
+				<p
+					class="absolute top-[40%] left-0 text-xl lg:text-5xl text-neutral-500"
+				>
 					Having graduated from a school specializing in IT, I'm now excited to
 					start my college journey. I'm always exploring new technologies and
 					have recently become fascinated with
 					<span class="text-slate-50"> 3D modeling</span> and its potential in
 					enhancing websites.
 				</p>
-				<p class="absolute top-[70%] left-0 text-5xl text-neutral-500">
+				<p
+					class="absolute top-[70%] left-0 text-xl lg:text-5xl text-neutral-500"
+				>
 					Art, in its boundless forms, has always captivated me—whether through
 					the stroke of a paintbrush, the delicate threading of a needle, or the
 					bold lines of a sketch. Yet, among these creative expressions,
@@ -190,59 +182,69 @@
 			</div>
 			<div
 				id="contact"
-				class="flex h-screen w-full border-[1px] border-neutral-400 rounded-2xl"
+				class="flex flex-col lg:flex-row h-screen w-full border-[1px] border-neutral-400 rounded-2xl"
 			>
 				<div
-					class="contact-left w-1/2 h-full text-slate-50 border-r-[2px] border-neutral-300"
+					class="contact-left w-full lg:w-1/2 h-full text-slate-50 border-r-[2px] border-neutral-300"
 				>
 					<a href=""
 						><div
-							class="h-1/6 flex justify-between items-center border-b-[1px] border-neutral-400 text-5xl p-8 hover:brightness-50 transition-all duration-300"
+							class="h-1/6 flex justify-between items-center border-b-[1px] border-neutral-400 text-2xl lg:text-5xl p-4 lg:p-8 hover:brightness-50 transition-all duration-300"
 						>
 							<i class="fa-solid fa-angles-right text-neutral-300"></i>
 							<p>Instagram</p>
-							<i class="fa-brands fa-instagram text-7xl"></i>
+							<i class="fa-brands fa-instagram text-4xl lg:text-7xl"></i>
 							<i class="fa-solid fa-angles-left text-neutral-300"></i></div
 					></a>
 					<a href=""
 						><div
-							class="h-1/6 flex justify-between items-center border-b-[1px] border-neutral-400 text-5xl p-8 hover:brightness-50 transition-all duration-300"
+							class="h-1/6 flex justify-between items-center border-b-[1px] border-neutral-400 text-2xl lg:text-5xl p-4 lg:p-8 hover:brightness-50 transition-all duration-300"
 						>
 							<i class="fa-solid fa-angles-right text-neutral-300"></i>
 							<p>X</p>
-							<img class="w-[4.5rem]" src="/twitterx.svg" alt="X icon" />
+							<img
+								class="w-[2.25rem] lg:w-[4.5rem]"
+								src="/twitterx.svg"
+								alt="X icon"
+							/>
 							<i class="fa-solid fa-angles-left text-neutral-300"></i></div
 					></a>
 					<a href=""
 						><div
-							class="h-1/6 flex justify-between items-center border-b-[1px] border-neutral-400 text-5xl p-8 hover:brightness-50 transition-all duration-300"
+							class="h-1/6 flex justify-between items-center border-b-[1px] border-neutral-400 text-2xl lg:text-5xl p-4 lg:p-8 hover:brightness-50 transition-all duration-300"
 						>
 							<i class="fa-solid fa-angles-right text-neutral-300"></i>
 							<p>LinkedIn</p>
-							<i class="fa-brands fa-linkedin text-7xl"></i>
+							<i class="fa-brands fa-linkedin text-4xl lg:text-7xl"></i>
 							<i class="fa-solid fa-angles-left text-neutral-300"></i></div
 					></a>
 					<a href=""
 						><div
-							class="h-1/6 flex justify-between items-center border-b-[1px] border-neutral-400 text-5xl p-8 hover:brightness-50 transition-all duration-300"
+							class="h-1/6 flex justify-between items-center border-b-[1px] border-neutral-400 text-2xl lg:text-5xl p-4 lg:p-8 hover:brightness-50 transition-all duration-300"
 						>
 							<i class="fa-solid fa-angles-right text-neutral-300"></i>
 							<p>GitHub</p>
-							<i class="fa-brands fa-square-github text-7xl"></i>
+							<i class="fa-brands fa-square-github text-4xl lg:text-7xl"></i>
 							<i class="fa-solid fa-angles-left text-neutral-300"></i></div
 					></a>
-					<div class="h-2/6 flex flex-col gap-12 p-8">
-						<p class="text-2xl text-neutral-400">
+					<div
+						class="relative h-[20vh] lg:h-[30vh] flex flex-col justify-center gap-12 p-4 lg:p-8"
+					>
+						<p class="absolute top-8 text-xl lg:text-2xl text-neutral-400">
 							Or contact me through email:
 						</p>
 						<div class="flex items-center justify-between">
-							<i class="fa-solid fa-angles-right text-neutral-300 text-5xl"></i>
-							<p class="text-4xl">oliwier.kotlicki@gmail.com</p>
-							<i class="fa-solid fa-angles-left text-neutral-300 text-5xl"></i>
+							<i
+								class="fa-solid fa-angles-right text-neutral-300 text-2xl lg:text-5xl"
+							></i>
+							<p class="text-xl lg:text-4xl">oliwier.kotlicki@gmail.com</p>
+							<i
+								class="fa-solid fa-angles-left text-neutral-300 text-2xl lg:text-5xl"
+							></i>
 						</div>
 					</div>
 				</div>
-				<div class="w-1/2 h-full contact-right text-slate-50">
+				<div class="w-full h-1/2 contact-right text-slate-50">
 					<input type="text" placeholder="Name:" />
 				</div>
 			</div>
