@@ -5,7 +5,7 @@ const container = document.getElementById("canvas-main");
 if (container) {
 	const scene = new THREE.Scene();
 	const camera = new THREE.PerspectiveCamera(
-		35,
+		37,
 		container.offsetWidth / container.offsetHeight,
 		0.1,
 		1000
@@ -15,14 +15,23 @@ if (container) {
 	renderer.setSize(container.offsetWidth, container.offsetHeight);
 	container.appendChild(renderer.domElement);
 
-	// Tworzenie sfery z efektem Wireframe
-	const geometry = new THREE.SphereGeometry(1, 32, 32);
+	// Adding texture to the planet
+	const geometry = new THREE.SphereGeometry(1, 64, 64);
+	const textureLoader = new THREE.TextureLoader();
+	const planetTexture = textureLoader.load("/2k_venus_surface.jpg"); // Adjust the path as needed
 	const material = new THREE.MeshBasicMaterial({
-		color: 0xff0000,
-		wireframe: true,
+		map: planetTexture,
 	});
-	const sphere = new THREE.Mesh(geometry, material);
-	scene.add(sphere);
+	const planet = new THREE.Mesh(geometry, material);
+	scene.add(planet);
+
+	// Lighting
+	const ambientLight = new THREE.AmbientLight(0x404040); // Soft white light
+	scene.add(ambientLight);
+
+	const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5); // Brighter light
+	directionalLight.position.set(5, 3, 5); // Adjust the position based on desired effect
+	scene.add(directionalLight);
 
 	camera.position.z = 5;
 
@@ -33,11 +42,11 @@ if (container) {
 
 	animate();
 
-	// Obracanie sfery na scroll
+	// Rotating the planet on scroll
 	window.addEventListener("scroll", () => {
-		const rotation = window.scrollY * 0.01;
-		sphere.rotation.x = rotation;
-		sphere.rotation.y = rotation;
+		const rotation = window.scrollY * 0.005;
+		planet.rotation.x = rotation;
+		planet.rotation.y = rotation;
 	});
 
 	window.addEventListener("resize", () => {

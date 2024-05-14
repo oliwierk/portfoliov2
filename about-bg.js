@@ -16,13 +16,14 @@ if (container) {
 	container.appendChild(renderer.domElement);
 
 	// Tworzenie sfery z efektem Wireframe
-	const geometry = new THREE.SphereGeometry(1, 32, 32);
+	const geometry = new THREE.SphereGeometry(1, 64, 64);
+	const textureLoader = new THREE.TextureLoader();
+	const planetTexture = textureLoader.load("/2k_venus_surface.jpg"); // Adjust the path as needed
 	const material = new THREE.MeshBasicMaterial({
-		color: 0xff0000,
-		wireframe: true,
+		map: planetTexture,
 	});
-	const sphere = new THREE.Mesh(geometry, material);
-	scene.add(sphere);
+	const planet = new THREE.Mesh(geometry, material);
+	scene.add(planet);
 
 	camera.position.z = 5;
 
@@ -35,9 +36,9 @@ if (container) {
 
 	// Obracanie sfery na scroll
 	window.addEventListener("scroll", () => {
-		const rotation = window.scrollY * 0.01;
-		sphere.rotation.x = rotation;
-		sphere.rotation.y = rotation;
+		const rotation = window.scrollY * 0.005;
+		planet.rotation.x = rotation;
+		planet.rotation.y = rotation;
 	});
 
 	window.addEventListener("resize", () => {
