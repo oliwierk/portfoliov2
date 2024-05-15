@@ -86,11 +86,10 @@ gsap.utils.toArray(".headline").forEach(tile => {
 	});
 });
 
-// Ensure the contact section stays visible after animation
-gsap.from("#contact .contact-left a", {
+gsap.from("#contact .contact-left > *", {
 	scrollTrigger: {
 		trigger: "#contact",
-		start: "top bottom-=200", // Adjust based on when you want the animation to start
+		start: "top bottom-=300", // More likely to be visible
 		toggleActions: "play none none none",
 		once: true,
 	},
@@ -98,36 +97,25 @@ gsap.from("#contact .contact-left a", {
 	y: 30,
 	duration: 0.7,
 	ease: "power1.out",
-	stagger: 0.2, // This will animate each link one after another with a delay
+	stagger: 0.2,
 });
 
-gsap.from("#contact .contact-left .relative", {
-	scrollTrigger: {
-		trigger: "#contact",
-		start: "top bottom-=150",
-		toggleActions: "play none none none",
-		once: true,
-	},
-	opacity: 0,
-	y: 30,
-	duration: 0.7,
-	ease: "power1.out",
-	delay: 0.3, // Delay this slightly more than the links for a nice effect
-});
-
-// Animate the right part of the contact section where the form is located
 gsap.from("#contact .contact-right > *", {
 	scrollTrigger: {
 		trigger: "#contact .contact-right",
-		start: "top bottom-=100",
-		toggleActions: "play none none none",
+		start: "top bottom-=300", // Adjust if the trigger does not activate correctly
+		end: "center center", // Ensures the animation plays fully while the elements are likely in view
+		toggleActions: "play none none reset", // Resets to initial state if scrolled back up
 		once: true,
 	},
-	opacity: 0,
-	y: 50,
+	opacity: 0, // Starts at opacity 0
+	y: 50, // Starts from 50 pixels below its original position
 	duration: 0.5,
 	ease: "power1.out",
-	stagger: 0.15, // This creates a sequence effect for each element in the form
+	stagger: 0.15, // Staggers the animation of each child element
+	onComplete: function () {
+		gsap.to("#contact .contact-right > *", { opacity: 1, y: 0, duration: 0 });
+	}, // Forcefully set the opacity back to 1 after the animation
 });
 
 // Adjusting #about section's animation for smoother transition
