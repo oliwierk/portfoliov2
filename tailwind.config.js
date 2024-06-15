@@ -6,7 +6,7 @@ export default {
 			backgroundImage: {
 				"portfolio-v1": "url('/mockup1.png')",
 				"lorem-bg": "url('/lorem.png')",
-				"lotto-bg": "url('/lotto.png')",
+				webvisionary: "url('/WebVisionary.png')",
 			},
 		},
 	},
