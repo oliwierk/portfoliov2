@@ -4,9 +4,10 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				"portfolio-v1": "url('/mockup1.png')",
+				"portfolio-v1": "url('/Portfoliov1.png')",
 				"lorem-bg": "url('/lorem.png')",
 				webvisionary: "url('/WebVisionary.png')",
+				meritumtravel: "url('/MeritumTravel.png')",
 			},
 		},
 	},
